@@ -1,0 +1,167 @@
+:root{
+  --main-color: #ff7600;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Settings Box */
+.settings-box{
+  position: fixed;
+  left: -250px;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 250px;
+  min-height: 100vh;
+  transition: .7s ;
+}
+.open{
+  left: 0;
+}
+.settings-box .toggle-settings{
+  position: absolute;
+  top: 6rem;
+  right: -1.8rem;
+  padding: .5rem;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.settings-box .option-box{
+  text-align: center;
+  padding: 10px;
+  background-color: #ddddddd8;
+  margin: 5px;
+  border-radius: 0 0 10px 10px;
+}
+.settings-box .option-box h4{
+  margin: 0;
+  color: #666;
+}
+.settings-box .option-box .colors-list{
+  list-style: none;
+  padding: 0;
+}
+.settings-box .option-box .colors-list li{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: .3;
+  display: inline-block;
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+.settings-box .option-box .colors-list li.active{
+  opacity: 1;
+}
+.settings-box .option-box .colors-list li:first-child{
+  background-color: #ff7600;
+}
+.settings-box .option-box .colors-list li:nth-child(2){
+  background-color: #5eff00;
+}
+.settings-box .option-box .colors-list li:nth-child(3){
+  background-color: #004cff;
+}
+.settings-box .option-box .colors-list li:nth-child(4){
+  background-color: #ff0000;
+}
+.settings-box .option-box .colors-list li:nth-child(5){
+  background-color: #ff00d4;
+}
+.settings-box .random-background{
+  text-align: center;
+  padding: 10px;
+  background-color: #ddddddd8;
+  margin: 5px;
+  border-radius: 0 0 10px 10px;
+}
+.settings-box .random-background h4{
+  margin: 0;
+  color: #666;
+}
+.settings-box .random-background .yes,
+.settings-box .random-background .no{
+  display: inline-block;
+  background-color: #00968860;
+  width: 50px;
+  color: #fff;
+  margin-top: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.settings-box .random-background span.active{
+  background-color: #009688;
+}
+/* End Settings Box */
+
+/* Start Landing Page */
+.landing-page{
+  min-height: 100vh;
+  background-image: url(/images/pizza1.jpg);
+  background-size: cover;
+  position: relative;
+}
+.landing-page .overlay{
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.landing-page .header-area{
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  margin-top: 2rem 0;
+}
+.landing-page .header-area .logo{
+  flex: 2;
+}
+.landing-page .header-area .links{
+  flex: 4;
+  list-style: none;
+  
+}
+.landing-page .header-area .links li{
+  display: inline;
+  margin-left: 20px;
+}
+.landing-page .header-area .links li a{
+  text-decoration: none;
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+.landing-page .header-area .links li a:hover,
+.landing-page .header-area .links li a.active{
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.landing-page .introduction-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.landing-page .introduction-text h1{
+  font-size: 2.5rem;
+}
+.landing-page .introduction-text h1 span{
+  color: var(--main-color);
+  font-size: 3rem;
+}
+.landing-page .introduction-text p{
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+/* End Landing Page */
