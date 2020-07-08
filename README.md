@@ -1,3 +1,3 @@
 # WebSiteTemplate
 
-`There is no response to the mobile screen yet`
+`There is no responsive with the mobile screen yet`
