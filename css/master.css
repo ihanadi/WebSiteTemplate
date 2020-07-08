@@ -4,6 +4,11 @@
 body{
   font-family: 'Open Sans', sans-serif;
 }
+.container{
+  width: 1170px;
+  padding: 0 15px;
+  margin: auto;
+}
 
 /* Start Settings Box */
 .settings-box{
@@ -120,7 +125,7 @@ body{
   color: #fff;
   display: flex;
   text-align: center;
-  margin-top: 2rem 0;
+  padding-top: 1.2rem ;
 }
 .landing-page .header-area .logo{
   flex: 2;
@@ -165,3 +170,68 @@ body{
   font-size: 1.1rem;
 }
 /* End Landing Page */
+/* Start About section */
+.about-us{
+  display: flex;
+  padding: 50px 20px;
+  
+}
+.about-us .info-box{
+  flex: 1;
+}
+.about-us h2{
+  font-size: 2.5rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.about-us p{
+  color: #777;
+  line-height: 1.8;
+
+}
+.image-box{
+  flex: 1;
+  text-align: center;
+}
+.image-box img{
+  width: 50%;
+}
+/* End About section */
+/* Start Service section */
+.service{
+  padding: 3rem 1rem;
+  background-color: #f1e7e750;
+}
+.service h2{
+  font-size: 2.5rem;
+  color: var(--main-color);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+.service .service-box{
+  display: flex;
+  text-align: center;
+}
+.service .delivery-service,
+.service .come-get-it-service{
+  flex: 1;
+  border: 2px solid #adadad;
+  margin: 1rem 3rem;
+  padding: 2rem 3.5rem;
+  border-radius: .8rem;
+}
+.service i{
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+.service h3{
+  color: #4b4747;
+  margin: 1rem; 
+}
+.service p{
+  /* padding: 1.2rem; */
+  margin: 0;
+  color: #666;
+}
+/* End Service section */
