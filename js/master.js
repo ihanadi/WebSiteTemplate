@@ -118,3 +118,56 @@ function randomizeImg(){
   }
 }
 randomizeImg()
+
+// Menu section
+let ourMenu = document.querySelectorAll('.img-box img');
+ourMenu.forEach(img => {
+  img.addEventListener('click', (pop)=>{
+    // create overlay 
+    let overlay = document.createElement('div');
+    overlay.className = 'popup-overlay';
+    document.body.appendChild(overlay);
+
+    //create popup
+    let popupBox = document.createElement('div');
+    popupBox.className = 'popup-box';
+
+    if(img.alt !== null){
+      //create heading
+      let imgHead = document.createElement('h3');
+      // create text 
+      let imgText = document.createTextNode(img.alt);
+
+      imgHead.appendChild(imgText);
+      popupBox.appendChild(imgHead);
+    }
+      // create img in popup box
+    let popupImg = document.createElement('img');
+    popupImg.src = img.src;
+
+    popupBox.appendChild(popupImg);
+    document.body.appendChild(popupBox);
+
+    //create close span 
+    let closeBtn = document.createElement('span');
+
+    let closeIcon = document.createElement('i');
+    closeIcon.classList = 'fa fa-times';
+
+    closeBtn.appendChild(closeIcon);
+    popupBox.appendChild(closeBtn);
+    
+    // clear popup img
+    document.addEventListener('click',(e)=>{
+      if(e.target.classList.contains('fa-times')){
+
+        e.target.parentElement.parentElement.remove();
+
+        document.querySelector('.popup-overlay').remove();
+      }
+    })
+
+
+  })
+});
+

@@ -235,3 +235,65 @@ body{
   color: #666;
 }
 /* End Service section */
+/* Start Menu section */
+.menu{
+  padding: 3rem 1rem;
+}
+.menu h2{
+  font-size: 2.5rem;
+  color: var(--main-color);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+.menu .img-box{
+  text-align: center;
+}
+.menu .img-box img{
+  width: 200px;
+  cursor: pointer;
+  padding: 5px;
+  height: 200px;
+}
+.popup-overlay{
+  position: fixed;
+  background-color: rgba(0, 0, 0, .7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+.popup-box{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  z-index: 25;
+  transition: all .5s ease-in-out;
+}
+.popup-box img{
+  max-width: 100%;
+}
+.popup-box h3{
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+  color: var(--main-color);
+}
+.popup-box .fa-times{
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: #fff;
+  width: 30px;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: var(--main-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* End Menu section */
